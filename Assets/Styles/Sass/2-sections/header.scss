@@ -1,0 +1,55 @@
+#top {
+  // Navbar
+  .navbar {
+    width: 100%;
+    height: 100px;
+    background-color: $red-accent;
+    display: flex;
+    .headshot {
+      margin-left:50px;
+      border:5px solid $red-accent;
+      width: 150px;
+      height: 150px;
+      margin-right: 500px;
+    }
+    .nav-link {
+      margin-top: 42px;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 0 10px;
+      font-weight: 300;
+      color:$text-main;
+      &:hover {
+        transition:color 0.25s ease-in-out, font-weight 0.25s ease-in-out;
+        font-weight: 700;
+        color:white
+      }
+    }
+  }
+
+  //Jumbo tron
+  .container {
+    width: 100%;
+    height: 600px;
+    background-image: url('../../Images/jumbotron-img.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:$text-accent;  
+    .jumbotron-title {
+      padding: 0;
+      margin: 0;
+      font-size: 72px;
+      text-align: center;
+      padding-top:200px;
+    }
+    .jumbotron-desc {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      text-align: center;
+      padding-top:10px;
+    }
+  }
+}
