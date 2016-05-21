@@ -1,0 +1,168 @@
+#family-tree {
+  margin-top: 25px;
+  .tree-row {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .tree-items {
+      display: flex;
+      flex-direction: row;
+      .tree-item {
+        display: block;
+        margin: 25px auto;
+        height: 200px;
+        width: 150px;
+        background-color: pink;
+        .tree-item-container {
+          height: inherit;
+          width: inherit;
+          .tree-scientist {
+            height: inherit;
+            width: inherit;
+            border: 2px solid rgb(145, 95, 8);
+            &:hover {
+              transition: transform 0.25s ease-in-out;
+              transform: scale(1.1);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#tree-row-1 {
+  .tree-top-line {
+    display: none;
+    background-color: white;
+    height: 10px;
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 350px;
+      position: absolute;
+      z-index: -1;
+      margin: 0 75px;
+      background-color: black;
+    }
+  }
+}
+
+#tree-row-2 {
+  .tree-top-line {
+    display: none;
+    background-color: white;
+    height: 10px;
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 372px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+}
+
+#tree-row-3 {
+  .tree-top-line {
+    display: block;
+    background-color: black;
+    height: 5px;
+    width:50%;
+    margin: 0 auto;
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 371px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+  #tree-item-2 {
+    .connector {
+      width: 5px;
+      height: 371px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+}
+
+#tree-row-4 {
+  .tree-top-line {
+    display: block;
+    background-color: black;
+    height: 5px;
+    width:50%;
+    margin: 0 auto;
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 400px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+}
+
+#tree-row-5 {
+  .tree-top-line {
+    display: none;
+    background-color: white;
+    height: 10px;
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 372px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+}
+
+#tree-row-6 {
+  .tree-top-line {
+    display: block;
+    background-color: black;
+    height: 5px;
+    width:50%;
+    margin: 0 auto;
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 100px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+  #tree-item-1 {
+    .connector {
+      width: 5px;
+      height: 100px;
+      position: absolute;
+      z-index: -1;
+      margin: -30px 75px;
+      background-color: black;
+    }
+  }
+}

@@ -7,13 +7,27 @@
   .timeline-container {
     height: 600px;
     width: 90%;
-    background-image: url('../../Images/timeline-bg-img-1.jpg');
+    background-image: url('../../Images/timeline-bg-img-0.jpg');
     background-blend-mode:saturation;
     background-repeat: repeat-x;
     background-size: cover;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 0 auto;
+    .timeline-hover {
+      background-color: rgba(22, 22, 23, 0.79);
+      width: 90%;
+      height: 85%;
+      position: absolute;
+      z-index: 75;
+      .hover-title {
+        color:white;
+        text-align: center;
+        margin: 25% 0 0 0;
+        font-size: 62px;
+        font-weight:300;
+      }
+    }
     .timeline {
       display: flex;
       width:14700px;
@@ -28,7 +42,7 @@
         margin-top: 292.5px;
       }
       .timeline-item {
-        background-color: $red-accent;
+        background-color: rgb(185, 237, 224);
         height: 300px;
         width: 500px;
         margin: 150px 100px;

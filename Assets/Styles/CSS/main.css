@@ -34,7 +34,7 @@ html, body {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  color: #4d5956; }
+  color: #abb6b9; }
   #top .container .jumbotron-title {
     padding: 0;
     margin: 0;
@@ -84,13 +84,25 @@ h2 {
   #timeline .timeline-container {
     height: 600px;
     width: 90%;
-    background-image: url("../../Images/timeline-bg-img-1.jpg");
+    background-image: url("../../Images/timeline-bg-img-0.jpg");
     background-blend-mode: saturation;
     background-repeat: repeat-x;
     background-size: cover;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 0 auto; }
+    #timeline .timeline-container .timeline-hover {
+      background-color: rgba(22, 22, 23, 0.79);
+      width: 90%;
+      height: 85%;
+      position: absolute;
+      z-index: 75; }
+      #timeline .timeline-container .timeline-hover .hover-title {
+        color: white;
+        text-align: center;
+        margin: 25% 0 0 0;
+        font-size: 62px;
+        font-weight: 300; }
     #timeline .timeline-container .timeline {
       display: flex;
       width: 14700px;
@@ -104,7 +116,7 @@ h2 {
         z-index: 0;
         margin-top: 292.5px; }
       #timeline .timeline-container .timeline .timeline-item {
-        background-color: #d93f3f;
+        background-color: #b9ede0;
         height: 300px;
         width: 500px;
         margin: 150px 100px;
@@ -121,5 +133,138 @@ h2 {
           margin: 25px 15px 10px;
           line-height: 2.0;
           font-weight: 100; }
+
+#family-tree {
+  margin-top: 25px; }
+  #family-tree .tree-row {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    #family-tree .tree-row .tree-items {
+      display: flex;
+      flex-direction: row; }
+      #family-tree .tree-row .tree-items .tree-item {
+        display: block;
+        margin: 25px auto;
+        height: 200px;
+        width: 150px;
+        background-color: pink; }
+        #family-tree .tree-row .tree-items .tree-item .tree-item-container {
+          height: inherit;
+          width: inherit; }
+          #family-tree .tree-row .tree-items .tree-item .tree-item-container .tree-scientist {
+            height: inherit;
+            width: inherit;
+            border: 2px solid #915f08; }
+            #family-tree .tree-row .tree-items .tree-item .tree-item-container .tree-scientist:hover {
+              transition: transform 0.25s ease-in-out;
+              transform: scale(1.1);
+              cursor: pointer; }
+
+#tree-row-1 .tree-top-line {
+  display: none;
+  background-color: white;
+  height: 10px; }
+#tree-row-1 #tree-item-1 .connector {
+  width: 5px;
+  height: 350px;
+  position: absolute;
+  z-index: -1;
+  margin: 0 75px;
+  background-color: black; }
+
+#tree-row-2 .tree-top-line {
+  display: none;
+  background-color: white;
+  height: 10px; }
+#tree-row-2 #tree-item-1 .connector {
+  width: 5px;
+  height: 372px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+
+#tree-row-3 .tree-top-line {
+  display: block;
+  background-color: black;
+  height: 5px;
+  width: 50%;
+  margin: 0 auto; }
+#tree-row-3 #tree-item-1 .connector {
+  width: 5px;
+  height: 371px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+#tree-row-3 #tree-item-2 .connector {
+  width: 5px;
+  height: 371px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+
+#tree-row-4 .tree-top-line {
+  display: block;
+  background-color: black;
+  height: 5px;
+  width: 50%;
+  margin: 0 auto; }
+#tree-row-4 #tree-item-1 .connector {
+  width: 5px;
+  height: 400px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+
+#tree-row-5 .tree-top-line {
+  display: none;
+  background-color: white;
+  height: 10px; }
+#tree-row-5 #tree-item-1 .connector {
+  width: 5px;
+  height: 372px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+
+#tree-row-6 .tree-top-line {
+  display: block;
+  background-color: black;
+  height: 5px;
+  width: 50%;
+  margin: 0 auto; }
+#tree-row-6 #tree-item-1 .connector {
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+#tree-row-6 #tree-item-1 .connector {
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  margin: -30px 75px;
+  background-color: black; }
+
+.top {
+  bottom: 0;
+  width: 75px;
+  height: 75px;
+  margin-left: 90%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  position: fixed;
+  z-index: 100; }
+  .top img {
+    height: 75px;
+    width: 75px; }
 
 /*# sourceMappingURL=main.css.map */
