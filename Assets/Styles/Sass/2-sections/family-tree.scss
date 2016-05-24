@@ -1,5 +1,13 @@
 #family-tree {
-  margin-top: 25px;
+  background-image: url('http://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/15.jpg');
+  height: 2250px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin-top: -40px;
+  .section-title {
+    padding-top: 75px;
+  }
   .tree-row {
     height: 350px;
     width: 100%;
@@ -19,11 +27,16 @@
           .tree-scientist {
             height: inherit;
             width: inherit;
+            position: relative;
+            z-index: 1;
             border: 2px solid rgb(145, 95, 8);
             &:hover {
-              transition: transform 0.25s ease-in-out;
+              transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
               transform: scale(1.1);
               cursor: pointer;
+              -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+              -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+              box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
             }
           }
         }
@@ -59,7 +72,7 @@
   #tree-item-1 {
     .connector {
       width: 5px;
-      height: 372px;
+      height: 360px;
       position: absolute;
       z-index: -1;
       margin: -30px 75px;
@@ -79,7 +92,7 @@
   #tree-item-1 {
     .connector {
       width: 5px;
-      height: 371px;
+      height: 355px;
       position: absolute;
       z-index: -1;
       margin: -30px 75px;
@@ -89,7 +102,7 @@
   #tree-item-2 {
     .connector {
       width: 5px;
-      height: 371px;
+      height: 355px;
       position: absolute;
       z-index: -1;
       margin: -30px 75px;
@@ -127,7 +140,7 @@
   #tree-item-1 {
     .connector {
       width: 5px;
-      height: 372px;
+      height: 360px;
       position: absolute;
       z-index: -1;
       margin: -30px 75px;

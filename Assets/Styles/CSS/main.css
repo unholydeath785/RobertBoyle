@@ -4,6 +4,12 @@ html, body {
   padding: 0;
   font-family: 'Roboto', sans-serif; }
 
+.section-title {
+  color: black;
+  font-weight: 300;
+  font-size: 48px;
+  text-align: center; }
+
 #top .navbar {
   width: 100%;
   height: 100px;
@@ -78,8 +84,9 @@ h2 {
 #timeline {
   display: block;
   width: 100%;
-  height: 625px;
-  padding-top: 25px;
+  height: 900px;
+  padding-top: 75px;
+  padding-bottom: 50px;
   background-color: #969696; }
   #timeline .timeline-container {
     height: 600px;
@@ -135,7 +142,14 @@ h2 {
           font-weight: 100; }
 
 #family-tree {
-  margin-top: 25px; }
+  background-image: url("http://blog.spoongraphics.co.uk/wp-content/uploads/2012/textures/15.jpg");
+  height: 2250px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin-top: -40px; }
+  #family-tree .section-title {
+    padding-top: 75px; }
   #family-tree .tree-row {
     height: 350px;
     width: 100%;
@@ -155,11 +169,16 @@ h2 {
           #family-tree .tree-row .tree-items .tree-item .tree-item-container .tree-scientist {
             height: inherit;
             width: inherit;
+            position: relative;
+            z-index: 1;
             border: 2px solid #915f08; }
             #family-tree .tree-row .tree-items .tree-item .tree-item-container .tree-scientist:hover {
-              transition: transform 0.25s ease-in-out;
+              transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
               transform: scale(1.1);
-              cursor: pointer; }
+              cursor: pointer;
+              -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+              -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+              box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 #tree-row-1 .tree-top-line {
   display: none;
@@ -179,7 +198,7 @@ h2 {
   height: 10px; }
 #tree-row-2 #tree-item-1 .connector {
   width: 5px;
-  height: 372px;
+  height: 360px;
   position: absolute;
   z-index: -1;
   margin: -30px 75px;
@@ -193,14 +212,14 @@ h2 {
   margin: 0 auto; }
 #tree-row-3 #tree-item-1 .connector {
   width: 5px;
-  height: 371px;
+  height: 355px;
   position: absolute;
   z-index: -1;
   margin: -30px 75px;
   background-color: black; }
 #tree-row-3 #tree-item-2 .connector {
   width: 5px;
-  height: 371px;
+  height: 355px;
   position: absolute;
   z-index: -1;
   margin: -30px 75px;
@@ -226,7 +245,7 @@ h2 {
   height: 10px; }
 #tree-row-5 #tree-item-1 .connector {
   width: 5px;
-  height: 372px;
+  height: 360px;
   position: absolute;
   z-index: -1;
   margin: -30px 75px;
@@ -253,6 +272,111 @@ h2 {
   margin: -30px 75px;
   background-color: black; }
 
+#expirement {
+  width: 100%;
+  display: block; }
+  #expirement .experiment-container {
+    justify-content: center;
+    display: flex;
+    height: 1000px;
+    width: 100%; }
+    #expirement .experiment-container .weight-container {
+      margin-top: 300px;
+      height: 200px;
+      width: 200px;
+      background-color: #bf8900; }
+      #expirement .experiment-container .weight-container .weight-obj {
+        background-image: url("../../Images/weight.png");
+        background-size: cover;
+        position: absolute;
+        margin: 50px 50px;
+        width: 100px;
+        height: 100px; }
+        #expirement .experiment-container .weight-container .weight-obj span {
+          color: white;
+          text-align: center; }
+    #expirement .experiment-container .experiment {
+      display: flex;
+      width: 700px;
+      height: 100%; }
+      #expirement .experiment-container .experiment .mass-container {
+        background-color: #7c7c7c;
+        border-radius: 10px;
+        width: 15%;
+        height: 100%; }
+        #expirement .experiment-container .experiment .mass-container .mass-level {
+          height: 600px;
+          width: 100%;
+          border-radius: 10px;
+          margin-top: 400px;
+          background-image: url("http://www.netanimations.net/animated-water-moving-blue-flowing.gif"); }
+      #expirement .experiment-container .experiment .area {
+        background: white;
+        background: -moz-linear-gradient(top, white 0%, #474747 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, #474747));
+        background: -webkit-linear-gradient(top, white 0%, #474747 100%);
+        background: -o-linear-gradient(top, white 0%, #474747 100%);
+        background: -ms-linear-gradient(top, white 0%, #474747 100%);
+        background: linear-gradient(to bottom, white 0%, #474747 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#474747', GradientType=0 );
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column; }
+        #expirement .experiment-container .experiment .area .pressure-area {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          height: 500px;
+          width: 500px;
+          min-height: 500px;
+          border-bottom: 2px solid black;
+          border-right: 1px solid black; }
+          #expirement .experiment-container .experiment .area .pressure-area .weight-obj {
+            background-image: url("../../Images/weight.png");
+            background-size: cover;
+            float: left;
+            margin: 10px;
+            width: 100px;
+            height: 100px; }
+            #expirement .experiment-container .experiment .area .pressure-area .weight-obj span {
+              color: white;
+              text-align: center; }
+        #expirement .experiment-container .experiment .area .volume-area {
+          width: 500px;
+          height: 500px;
+          background-image: url("http://ozonedepletiontheory.info/Images/translational-kinetic-energy.gif");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; }
+      #expirement .experiment-container .experiment .side-ticks {
+        background-color: black;
+        width: 200px;
+        height: 100%; }
+        #expirement .experiment-container .experiment .side-ticks .volume {
+          height: 100px;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          color: white;
+          text-align: center;
+          padding: 0; }
+        #expirement .experiment-container .experiment .side-ticks .tick-container {
+          margin-top: 353px;
+          height: 527px; }
+        #expirement .experiment-container .experiment .side-ticks span {
+          font-size: 16px;
+          border-bottom: 1px solid #737373;
+          color: white;
+          display: block;
+          margin-top: 11px; }
+          #expirement .experiment-container .experiment .side-ticks span:before {
+            padding-left: 10px;
+            content: ' - '; }
+          #expirement .experiment-container .experiment .side-ticks span:after {
+            padding-right: 10px;
+            content: 'm^3'; }
+
 .top {
   bottom: 0;
   width: 75px;
@@ -265,5 +389,58 @@ h2 {
   .top img {
     height: 75px;
     width: 75px; }
+
+.modal-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 105; }
+  .modal-overlay .modal-container {
+    margin: 10% auto;
+    width: 55%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.74);
+    display: flex; }
+    .modal-overlay .modal-container .modal-close {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      font-size: 20px;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 0, 0.74);
+      border: 2px solid white;
+      margin-top: -15px;
+      margin-left: -25px; }
+      .modal-overlay .modal-container .modal-close:hover {
+        cursor: pointer; }
+      .modal-overlay .modal-container .modal-close span {
+        padding-top: 3px;
+        display: block; }
+    .modal-overlay .modal-container .modal-col-1 {
+      margin-left: -14px;
+      width: 50%;
+      height: 100%; }
+      .modal-overlay .modal-container .modal-col-1 .modal-img {
+        height: 100%;
+        width: 66%; }
+    .modal-overlay .modal-container .modal-col-2 {
+      width: 50%;
+      height: inherit; }
+      .modal-overlay .modal-container .modal-col-2 .modal-title {
+        text-transform: capitalize;
+        font-size: 60px;
+        color: white;
+        font-weight: 300; }
+      .modal-overlay .modal-container .modal-col-2 .modal-info {
+        color: white;
+        font-weight: 100;
+        line-height: 2.0;
+        font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */

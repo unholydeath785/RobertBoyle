@@ -4,6 +4,13 @@ html,body {
   font-family: 'Roboto', sans-serif;
 }
 
+.section-title {
+  color:black;
+  font-weight:300;
+  font-size: 48px;
+  text-align: center;
+}
+
 // Import Packages
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300,500,100);
 @import "1-tools/variables.scss";
@@ -11,4 +18,6 @@ html,body {
 @import "2-sections/about.scss";
 @import "2-sections/timeline.scss";
 @import "2-sections/family-tree.scss";
+@import "2-sections/experiment.scss";
 @import "3-modules/top.scss";
+@import "3-modules/modal.scss";

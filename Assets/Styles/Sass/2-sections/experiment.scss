@@ -1,0 +1,125 @@
+#expirement {
+  width: 100%;
+  display:block;
+  .experiment-container {
+    justify-content: center;
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    .weight-container {
+      margin-top: 300px;
+      height: 200px;
+      width: 200px;
+      background-color:rgb(191, 137, 0);
+      .weight-obj {
+        background-image:url('../../Images/weight.png');
+        background-size: cover;
+        position: absolute;
+        margin: 50px 50px;
+        width: 100px;
+        height: 100px;
+        span {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+    .experiment {
+      display: flex;
+      width: 700px;
+      height: 100%;
+      .mass-container {
+        background-color: rgb(124, 124, 124);
+        border-radius: 10px;
+        width: 15%;
+        height: 100%;
+        .mass-level {
+          height: 600px;
+          width: 100%;
+          border-radius: 10px;
+          margin-top: 400px;
+          background-image:url('http://www.netanimations.net/animated-water-moving-blue-flowing.gif');
+        }
+      }
+      .area {
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(71,71,71,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(71,71,71,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(71,71,71,1) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(71,71,71,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(71,71,71,1) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(71,71,71,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#474747', GradientType=0 );
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .pressure-area {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          height: 500px;
+          width: 500px;
+          min-height: 500px;
+          border-bottom:2px solid black;
+          border-right: 1px solid black;
+          .weight-obj {
+            background-image:url('../../Images/weight.png');
+            background-size: cover;
+            float:left;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            span {
+              color: white;
+              text-align: center;
+            }
+
+          }
+        }
+        .volume-area {
+          width: 500px;
+          height: 500px;
+          background-image:url('http://ozonedepletiontheory.info/Images/translational-kinetic-energy.gif');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+      .side-ticks {
+        background-color: black;
+        width: 200px;
+        height: 100%;
+
+        .volume {
+          height: 100px;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          color:white;
+          text-align: center;
+          padding: 0;
+        }
+        .tick-container {
+          margin-top:353px;
+          height: 527px;
+        }
+        span {
+          font-size: 16px;
+          border-bottom:1px solid #737373;
+          color:white;
+          display: block;
+          margin-top: 11px;
+          &:before {
+            padding-left:10px;
+            content: ' - ';
+          }
+          &:after {
+            padding-right: 10px;
+            content: 'm^3';
+          }
+        }
+      }
+    }
+  }
+}
