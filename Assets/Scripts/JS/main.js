@@ -104,21 +104,46 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+  ev.dataTransfer.effectAllowed='move';
+  ev.dataTransfer.setData("Text", ev.target.getAttribute('id'));
+  ev.dataTransfer.setDragImage(ev.target,0,0);
+  ev.dataTransfer.setData("text", ev.target.id);
 }
 
+var weightsAdded = ['weight-8'];
+var index = 1;
 function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
     var eleClass = $(ev.target).prop("class");
     if (eleClass == 'pressure-area') {
-        pressure += 2;
-        experiment();
-
-    } else {
-        pressure -= 2;
-        experiment();
+      ev.target.appendChild(document.getElementById(data));
+      var id = ev.target.childNodes[index].attributes[3].nodeValue;
+      weightsAdded.push(id);
+      index++;
+      pressure += 2;
+      experiment();
+    } else if (eleClass == 'weight-container') {
+      ev.target.appendChild(document.getElementById(data));
+      var id = ev.target.children[8 - index].attributes[3].nodeValue;
+      console.log(weightsAdded);
+      var indexOf = weightsAdded.indexOf(id);
+      weightsAdded.splice(indexOf,1);
+      console.log(weightsAdded);
+      index--;
+      pressure -= 2;
+      experiment();
+    } else if ($(eleClass).parent().prop("class") == 'weight-container') {
+      ev.target = $('.weight-container');
+      ev.target.appendChild(document.getElementById(data));
+      var id = ev.target.children[8 - index].attributes[3].nodeValue;
+      console.log(weightsAdded);
+      var indexOf = weightsAdded.indexOf(id);
+      weightsAdded.splice(indexOf,1);
+      console.log(weightsAdded);
+      index--;
+      pressure -= 2;
+      experiment();
     }
   }
 
